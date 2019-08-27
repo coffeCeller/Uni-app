@@ -9,24 +9,32 @@
         style="width: 300px; height: 200px;"
         canvas-id="firstCanvas"
       ></canvas>
-      <canvas
-        style="width: 400px; height: 500px;"
-        canvas-id="secondCanvas"
-      ></canvas>
-      <canvas
-        style="width: 400px; height: 500px;"
-        canvas-id="secondCanvas"
-        @error="canvasIdErrorCallback"
-      ></canvas>
+    </view>
+    <view>
+      <uni-badge text="1">12</uni-badge>
+      <uni-badge
+        text="2"
+        type="success"
+        @click="bindClick"
+      >12</uni-badge>
+      <uni-badge
+        text="3"
+        type="primary"
+        :inverted="true"
+      >121</uni-badge>
     </view>
   </view>
 </template>
 
 <script>
+import { uniBadge } from '@dcloudio/uni-ui'
+//import uniBadge from '@dcloudio/uni-ui/lib/uni-badge/uni-badge.vue' //也可使用此方式引入组件
 export default {
+  components: { uniBadge }
+  ,
   data() {
     return {
-      name: '是否需要登录'
+      name: '需要登录'
     }
   },
   onLoad() {
