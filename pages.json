@@ -11,7 +11,13 @@
       "style": {
         "navigationBarTitleText": "login"
       }
-    }
+    },
+	{
+	  "path": "pages/finger/index",
+	  "style": {
+	    "navigationBarTitleText": "finger"
+	  }
+	}
   ],
   "tabBar": {
     "color": "#7A7E83",
@@ -30,7 +36,13 @@
         "iconPath": "static/logo.png",
         "selectedIconPath": "static/logo.png",
         "text": "接口"
-      }
+      },
+	  {
+	    "pagePath": "pages/finger/index",
+	    "iconPath": "static/logo.png",
+	    "selectedIconPath": "static/logo.png",
+	    "text": "指纹"
+	  }
     ]
   },
   "globalStyle": {

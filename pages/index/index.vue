@@ -7,7 +7,7 @@
     <view class="text-area">
       <text class="title">{{title}}</text>
     </view>
-    <navigator url="../login/index">跳转到登录的页面</navigator>
+    <button type="primary" @tap="getlogin()">跳转到登录的页面</button>
   </view>
 </template>
 
@@ -22,7 +22,14 @@ export default {
 
   },
   methods: {
-
+	getlogin() {
+		uni.switchTab({
+			url: '../login/index',
+			success: res => {},
+			fail: () => {},
+			complete: () => {}
+		});
+	}
   }
 }
 </script>
@@ -36,12 +43,12 @@ export default {
 }
 
 .logo {
-  height: 200upx;
-  width: 200upx;
-  margin-top: 200upx;
+  height: 200rpx;
+  width: 200rpx;
+  margin-top: 200rpx;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 50upx;
+  margin-bottom: 50rpx;
 }
 
 .text-area {
@@ -50,7 +57,7 @@ export default {
 }
 
 .title {
-  font-size: 36upx;
+  font-size: 36rpx;
   color: #8f8f94;
 }
 </style>

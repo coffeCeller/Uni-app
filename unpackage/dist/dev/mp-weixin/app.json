@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/login/index"
+    "pages/login/index",
+    "pages/finger/index"
   ],
   "subPackages": [],
   "window": {
@@ -27,8 +28,19 @@
         "iconPath": "static/logo.png",
         "selectedIconPath": "static/logo.png",
         "text": "接口"
+      },
+      {
+        "pagePath": "pages/finger/index",
+        "iconPath": "static/logo.png",
+        "selectedIconPath": "static/logo.png",
+        "text": "指纹"
       }
     ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "test  location api"
+    }
   },
   "usingComponents": {}
 }

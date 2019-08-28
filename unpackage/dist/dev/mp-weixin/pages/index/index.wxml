@@ -1,1 +1,1 @@
-<view class="content"><image class="logo" src="/static/logo.png"></image><view class="text-area"><text class="title">{{title}}</text></view><navigator url="../login/index">跳转到登录的页面</navigator></view>
+<view class="content"><image class="logo" src="/static/logo.png"></image><view class="text-area"><text class="title">{{title}}</text></view><button type="primary" data-event-opts="{{[['tap',[['getlogin']]]]}}" bindtap="__e">跳转到登录的页面</button></view>
