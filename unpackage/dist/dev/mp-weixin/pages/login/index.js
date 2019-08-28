@@ -105,7 +105,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _uniBadge = function _uniBadge() {return __webpack_require__.e(/*! import() | node-modules/@dcloudio/uni-ui/lib/uni-badge/uni-badge */ "node-modules/@dcloudio/uni-ui/lib/uni-badge/uni-badge").then(__webpack_require__.bind(null, /*! @dcloudio/uni-ui/lib/uni-badge/uni-badge */ 30));};
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _uniBadge = function _uniBadge() {return __webpack_require__.e(/*! import() | node-modules/@dcloudio/uni-ui/lib/uni-badge/uni-badge */ "node-modules/@dcloudio/uni-ui/lib/uni-badge/uni-badge").then(__webpack_require__.bind(null, /*! @dcloudio/uni-ui/lib/uni-badge/uni-badge */ 27));};
 
 
 

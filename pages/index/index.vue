@@ -1,53 +1,56 @@
 <template>
-	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view class="text-area">
-			<text class="title">{{title}}</text>
-		</view>
-		<navigator url="../login/index">跳转到登录页面</navigator>
-	</view>
+  <view class="content">
+    <image
+      class="logo"
+      src="/static/logo.png"
+    ></image>
+    <view class="text-area">
+      <text class="title">{{title}}</text>
+    </view>
+    <navigator url="../login/index">跳转到登录的页面</navigator>
+  </view>
 </template>
 
 <script>
-	export default {
-		data() {
-			return {
-				title: 'Hello'
-			}
-		},
-		onLoad() {
+export default {
+  data() {
+    return {
+      title: 'Hello'
+    }
+  },
+  onLoad() {
 
-		},
-		methods: {
+  },
+  methods: {
 
-		}
-	}
+  }
+}
 </script>
 
 <style>
-	.content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-	.logo {
-		height: 200upx;
-		width: 200upx;
-		margin-top: 200upx;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 50upx;
-	}
+.logo {
+  height: 200upx;
+  width: 200upx;
+  margin-top: 200upx;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50upx;
+}
 
-	.text-area {
-		display: flex;
-		justify-content: center;
-	}
+.text-area {
+  display: flex;
+  justify-content: center;
+}
 
-	.title {
-		font-size: 36upx;
-		color: #8f8f94;
-	}
+.title {
+  font-size: 36upx;
+  color: #8f8f94;
+}
 </style>
