@@ -18,6 +18,9 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
+.page-section {
+  width: 100%;
+}
 .logo {
   height: 200rpx;
   width: 200rpx;

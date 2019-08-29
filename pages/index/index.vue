@@ -3,11 +3,23 @@
     <image
       class="logo"
       src="/static/logo.png"
-    ></image>
+    />
     <view class="text-area">
       <text class="title">{{title}}</text>
     </view>
-    <button type="primary" @tap="getlogin()">跳转到登录的页面</button>
+    <button
+      type="primary"
+      @tap="getlogin()"
+    >跳转到登录的页面</button>
+    <view class="page-section page-section-gap">
+      <map
+        style="width: 100%; height: 300rpx;"
+        :latitude="latitude"
+        :longitude="longitude"
+        :markers="covers"
+      >
+      </map>
+    </view>
   </view>
 </template>
 
@@ -15,21 +27,32 @@
 export default {
   data() {
     return {
-      title: 'Hello'
+      title: 'Hello',
+      latitude: 39.909,
+      longitude: 116.39742,
+      covers: [{
+        latitude: 39.909,
+        longitude: 116.39742,
+        iconPath: '@/logo.png'
+      }, {
+        latitude: 39.90,
+        longitude: 116.39,
+        iconPath: '@/logo.png'
+      }]
     }
   },
   onLoad() {
-
+    uni.$emit('update', { msg: '页面更新' })
   },
   methods: {
-	getlogin() {
-		uni.switchTab({
-			url: '../login/index',
-			success: res => {},
-			fail: () => {},
-			complete: () => {}
-		});
-	}
+    getlogin() {
+      uni.switchTab({
+        url: '../login/index',
+        success: res => { },
+        fail: () => { },
+        complete: () => { }
+      });
+    }
   }
 }
 </script>
@@ -41,7 +64,9 @@ export default {
   align-items: center;
   justify-content: center;
 }
-
+.page-section {
+  width: 100%;
+}
 .logo {
   height: 200rpx;
   width: 200rpx;

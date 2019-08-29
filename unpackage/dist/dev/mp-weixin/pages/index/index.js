@@ -125,15 +125,38 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
     return {
-      title: 'Hello' };
+      title: 'Hello',
+      latitude: 39.909,
+      longitude: 116.39742,
+      covers: [{
+        latitude: 39.909,
+        longitude: 116.39742,
+        iconPath: '@/logo.png' },
+      {
+        latitude: 39.90,
+        longitude: 116.39,
+        iconPath: '@/logo.png' }] };
+
 
   },
   onLoad: function onLoad() {
-
+    uni.$emit('update', { msg: '页面更新' });
   },
   methods: {
     getlogin: function getlogin() {
